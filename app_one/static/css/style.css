@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+    width: 100%;
+}
+h2{
+    font-size: 40px;
+    color: blue;
+}
+.bg-1{
+    width: 80%;
+    height: 40%;
+    object-fit: contain;
+}
+app1{
+    background-position: center;
+}

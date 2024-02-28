@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{%load static%}
+
+
+{%block content%}
+<div>
+    <img class="bg-1" src="{%static 'images/banner.jpg' %}" alt="banner">
+</div>
+<p>my name is {{n|capfirst}}</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia neque tenetur voluptate quidem sequi nesciunt unde ipsa expedita placeat. Harum dolores facere natus quis officia temporibus aut eum enim consequuntur!</p>
+(%include "extras/list.html" %)
+    <img src="https://img.freepik.com/free-photo/nature-design-with-bokeh-effect_1048-1882.jpg?w=740&t=st=1705326279~exp=1705326879~hmac=a1ac3972ef093414f3aeb26c7a23347fb4ecb62538745eca9aa3dd16fc833f3b" alt="background", width="100" height="100">
+
+    <div>  
+    {% if course_list %}
+        {% for course in course_list %}
+        <p>{{course}}</p>
+        {%endfor%}
+    {%else%}
+        <p>no courses yet</p>
+    {%endif%}
+    </div>   
+{%endblock content%}
+
+
+{%block footer_content%}
+<p>this is the index footer content</p>
+{%endblock footer_content%}
